@@ -25,6 +25,7 @@ export class BusquedaComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(`------->: 'busqueda'`, 'busqueda');
   }
 
   ngAfterViewInit() {
@@ -48,10 +49,10 @@ export class BusquedaComponent implements OnInit {
 
 
   detectChanges() {
-    this.insideElements[this.totalElementos - 1].instance.accion.subscribe((data) => {
-      console.log(`------->: data`, data);
-      // BORRAMOS EL REGISTRO 
-    });
+    /*     this.insideElements[this.totalElementos - 1].instance.accion.subscribe((data) => {
+          console.log(`------->: data`, data);
+          // BORRAMOS EL REGISTRO 
+        }); */
   }
 
   cambiar() {
